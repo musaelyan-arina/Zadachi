@@ -79,10 +79,7 @@ int main()
 	setlocale(LC_ALL, "rus");
 	IntArray arr;
 	create(&arr, 31);
-	for (int i = 0; i < arr.size; i++)
-	{
-		set(&arr, i, i);
-    }
+	for (int i = 0; i < arr.size; i++) set(&arr, i, i);
 	print(&arr);
 	resize(&arr, 51);
 	print(&arr);
